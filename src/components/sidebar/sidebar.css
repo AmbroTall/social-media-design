@@ -1,0 +1,134 @@
+.sidebar-container {
+  flex: 2;
+  height: calc(100vh-15px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  position: relative;
+  padding: 5px 30px;
+  border-right: 1px solid #ccc;
+}
+
+.logo {
+  font-weight: 500;
+  margin: 5px 0px;
+  color: skyblue;
+  cursor: pointer;
+}
+
+.sidebar-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.sidebar-items {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.sidebar-items:hover {
+  background-color: beige;
+  border-radius: 3;
+  /* width: auto; */
+}
+
+.icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.dot-active-not {
+  position: absolute;
+  background-color: skyblue;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  top: -2.5px;
+  right: -2px;
+  font-size: 10px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.sidbar-item-text {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.side-tweet-btn {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.profile-sidebar {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  margin-right: 10px;
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.handle {
+  font-weight: 500;
+  color: #555;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 680px) {
+  .sidebar-container {
+    width: 50px;
+  }
+
+  .logo {
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 30px !important;
+  }
+
+  .sidbar-item-text,
+  .name,
+  .handle,
+  .prof-icon {
+    display: none !important;
+  }
+}

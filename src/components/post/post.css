@@ -1,0 +1,44 @@
+.profile-post-container {
+  padding: 15px;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.profile-post {
+  display: flex;
+  align-items: center;
+}
+
+.input-post {
+  font-size: 18px;
+  /* padding: px; */
+  border: none;
+  outline: none;
+}
+
+.tweet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 10px 0;
+}
+
+.post-icons {
+  margin-left: 50px;
+}
+.post-icon-items {
+  color: lightskyblue !important;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.post-icon-items:hover {
+  background-color: rgb(225, 241, 250);
+  border-radius: 50%;
+}
+
+.tweet-post {
+  border-radius: 25px !important;
+  padding: 5px 15px !important;
+  background-color: lightskyblue !important;
+  text-transform: capitalize !important;
+}
